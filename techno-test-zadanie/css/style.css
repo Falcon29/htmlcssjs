@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+    max-width: 1280px;
+}
+
+.top-block {
+    display: block;
+	border: 1px solid;
+    border-radius: 3px;
+    padding: 2rem;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.product-wrapper {
+    display: block;
+	width: 100%;
+}
+
+.product {
+	display: block;
+	border: 1px solid;
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	margin: 1rem;
+	text-decoration: none;
+	color: #474747;
+	z-index: 0;
+	height: 300px;
+}
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.3%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 25%;
+	}
+}
